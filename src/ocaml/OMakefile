@@ -1,0 +1,32 @@
+.PHONY: all install clean
+
+# js_of_ocaml requires a bytecode-compiled binary, not native-compiled.
+NATIVE_ENABLED = false
+BYTE_ENABLED = true
+
+OCAMLPACKS[] =
+	lwt
+	lwt.ppx
+	js_of_ocaml
+	js_of_ocaml.ppx
+	c3
+
+OCAMLFLAGS = \
+	-g -thread -no-alias-deps -annot -bin-annot \
+	-strict-formats -safe-string -strict-sequence \
+	-w A-4-33-34-39-41-42-43-44-45-48-49-50-58
+
+FILES[] =
+	main
+
+PROGRAM = boilerplate
+
+OCamlProgram($(PROGRAM), $(FILES))
+
+$(PROGRAM).js: $(PROGRAM).run
+	js_of_ocaml $^
+
+.DEFAULT: $(PROGRAM).js
+
+clean::
+	rm -f $(PROGRAM) $(PROGRAM).* *.annot *.cm* *.o *.a *.so *.omc

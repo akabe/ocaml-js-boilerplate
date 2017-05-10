@@ -1,0 +1,26 @@
+{
+  "name": "ocaml-js-boilerplate",
+  "version": "0.0.0",
+  "description": "A boilerplate repository for js_of_ocaml",
+  "main": "dist/bundle.min.js",
+  "scripts": {
+    "build": "gulp"
+  },
+  "author": "Akinori ABE",
+  "license": "MIT License",
+  "//": "Don't use packages in https://github.com/gulpjs/plugins/blob/master/src/blackList.json",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "c3": "^0.4.11",
+    "css-loader": "^0.25.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-pug": "^3.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "jquery": "^3.2.1"
+  }
+}

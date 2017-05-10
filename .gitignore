@@ -7,6 +7,11 @@
 *.cmx
 *.cmxs
 *.cmxa
+*.cmt
+*.cmti
+*.annot
+*.run
+*.opt
 
 # ocamlbuild working directory
 _build/
@@ -18,3 +23,16 @@ _build/
 # oasis generated files
 setup.data
 setup.log
+
+# omake generated files
+.omakedb
+.omakedb.lock
+*.omc
+
+# oUnit generated files
+oUnit-*
+
+# node directories
+node_modules
+dist
+src/**/*.js

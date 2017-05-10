@@ -1,0 +1,85 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name='description' content='')
+    meta(name='author' content='')
+    title OCaml JavaScript project boilerplate
+    link(rel='stylesheet' href='bundle.min.css')
+  body
+    nav.navbar.navbar-inverse.navbar-fixed-top
+      div.container
+        div.navbar-header
+          button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        a.navbar-brand(href='#') Bootstrap theme
+
+        div.navbar-collapse.collapse#navbar
+          ul.nav.navbar-nav
+            li.active: a(href='#') Home
+            li: a(href='#about') About
+            li: a(href='#contact') Contact
+            li.dropdown
+              a(href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Dropdown&nbsp;
+                span.caret
+              ul.dropdown-menu
+                li: a(href='#') Action
+                li: a(href='#') Another action
+                li: a(href='#') Something else here
+                li.divider(role='separator')
+                li.dropdown-header Nav header
+                li: a(href='#') Separated link
+                li: a(href='#') One more separated link
+
+    div.container.theme-showcase(role='main')
+
+      div.jumbotron
+        h1 Theme example
+        p This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+
+      div.page-header
+        h1 Buttons
+
+      p
+        button.btn.btn-lg.btn-default(type='button') Default
+        button.btn.btn-lg.btn-primary(type='button') Primary
+        button.btn.btn-lg.btn-success(type='button') Success
+        button.btn.btn-lg.btn-info(type='button') Info
+        button.btn.btn-lg.btn-warning(type='button') Warning
+        button.btn.btn-lg.btn-danger(type='button') Danger
+        button.btn.btn-lg.btn-link(type='button') Link
+      p
+        button.btn.btn-default(type='button') Default
+        button.btn.btn-primary(type='button') Primary
+        button.btn.btn-success(type='button') Success
+        button.btn.btn-info(type='button') Info
+        button.btn.btn-warning(type='button') Warning
+        button.btn.btn-danger(type='button') Danger
+        button.btn.btn-link(type='button') Link
+      p
+        button.btn.btn-sm.btn-default(type='button') Default
+        button.btn.btn-sm.btn-primary(type='button') Primary
+        button.btn.btn-sm.btn-success(type='button') Success
+        button.btn.btn-sm.btn-info(type='button') Info
+        button.btn.btn-sm.btn-warning(type='button') Warning
+        button.btn.btn-sm.btn-danger(type='button') Danger
+        button.btn.btn-sm.btn-link(type='button') Link
+      p
+        button.btn.btn-xs.btn-default(type='button') Default
+        button.btn.btn-xs.btn-primary(type='button') Primary
+        button.btn.btn-xs.btn-success(type='button') Success
+        button.btn.btn-xs.btn-info(type='button') Info
+        button.btn.btn-xs.btn-warning(type='button') Warning
+        button.btn.btn-xs.btn-danger(type='button') Danger
+        button.btn.btn-xs.btn-link(type='button') Link
+
+      div.page-header
+        h1 C3.js demonstration
+        div#timeseries
+
+    script(type='text/javascript' src='bundle.min.js')

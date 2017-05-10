@@ -1,0 +1,6 @@
+.PHONY: all test install clean
+
+.SUBDIRS: src/ocaml
+
+clean::
+	rm -f .omakedb* *.omc
