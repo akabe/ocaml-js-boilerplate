@@ -66,3 +66,9 @@ gulp.task('bundle-js', ['ocaml'], function () {
 });
 
 gulp.task('default', ['pug', 'bundle-css', 'bundle-js']);
+
+gulp.task('watch', function () {
+  gulp.watch('src/pug/**/*.pug', ['pug']);
+  gulp.watch('src/sass/**/*.scss', ['bundle-css']);
+  gulp.watch('src/ocaml/**/*.ml', ['bundle-js']);
+});

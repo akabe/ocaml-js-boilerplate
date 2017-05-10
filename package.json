@@ -4,7 +4,8 @@
   "description": "A boilerplate repository for js_of_ocaml",
   "main": "dist/bundle.min.js",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "watch": "gulp watch"
   },
   "author": "Akinori ABE",
   "license": "MIT License",
