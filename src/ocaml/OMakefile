@@ -5,8 +5,6 @@ NATIVE_ENABLED = false
 BYTE_ENABLED = true
 
 OCAMLPACKS[] =
-	lwt
-	lwt.ppx
 	js_of_ocaml
 	js_of_ocaml.ppx
 	c3
